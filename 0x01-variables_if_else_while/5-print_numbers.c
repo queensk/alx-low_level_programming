@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints all single digit numbers of base 10 strating from 0
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int r;
+	int i;
 
-for (r = 0; r <= 9; r++)
-{
-printf("%d", r);
-}
-printf("\n");
-return (0);
+	for (i = 0; i <= 9; i++)
+	{
+		printf("%d", i);
+	}
+	putchar('\n');
+	return (0);
 }

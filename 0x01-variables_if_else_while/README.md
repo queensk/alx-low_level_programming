@@ -1,1 +1,1 @@
-0x01. C - Variables, if, else, while
+This directory contains projects on creating and using loops in C.

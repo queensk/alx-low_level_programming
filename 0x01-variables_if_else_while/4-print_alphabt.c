@@ -1,27 +1,21 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - print all alphabets in lowercase except 'q' and 'e'
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int y;
+	int i = 'a';
 
-for (y = 97; y <= 122; y++)
-{
-<<<<<<< HEAD
-       if (m == 101 || m == 113)
-=======
-if (y == 101 || y == 113)
->>>>>>> c38d008b18676f16774155151031a0fcc1c46752
-{
-}
-else
-{
-putchar(y);
-}
-}
-putchar('\n');
-return (0);
+	while (i <= 'z')
+	{
+		if (i != 'q' && i != 'e')
+		{
+			putchar(i);
+		}
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
