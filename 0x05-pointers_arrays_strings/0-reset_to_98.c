@@ -5,7 +5,7 @@
  * and updates the value to  point to 98.
  * @n: this is the pointer agument passed in.
  *
- * Return:void.
+ * Return: void.
  */
 
 void reset_to_98(int *n)
