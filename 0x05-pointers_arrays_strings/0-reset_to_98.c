@@ -5,8 +5,8 @@
  * and updates the value it points to to 98.
  * @n: this is the pointer argument passed in.
  *
+ * Description: helps understand pointers
  * Return: void.
- * Description: helps understand pointers 
  */
 
 void reset_to_98(int *n)
