@@ -1,4 +1,4 @@
-#include "holbaton.h"
+#include "holberton.h"
 
 /**
  *reste_to_98 takes a pointer to an int as perameter
