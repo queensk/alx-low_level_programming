@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
  *_strcpy - copies a string pointed to be src,
  *inlcuding the \0 charcher of the buffer
