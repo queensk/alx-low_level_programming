@@ -1,4 +1,4 @@
-#include "main.h"
+a#include "main.h"
 
 /**
  * puts2 - prints outputs of a string
@@ -13,5 +13,5 @@ void puts2(char *str)
   for(i = 0; str[i] != '\0'; i++)
     if(!(i%2))
       _putchar(str[i]);
-  -putchar(10)
+  _putchar(10)
 }
