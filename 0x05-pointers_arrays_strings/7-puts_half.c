@@ -1,12 +1,17 @@
 #include "main.h"
 
 /**
+ * puts_half - prints half of a string, followed by a new line.
+ *@str: input string.
+ *
+ * Description: a function that prints half of a string, followed bya new line
+ *Return: void
  */
 void puts_half(char *str)
 {
   int i = 0, j;
 
-  for (; str[i] ! = '\0'; i++)
+  for (; str[i] != '\0'; i++)
     ;
 
   if (i % 2)
