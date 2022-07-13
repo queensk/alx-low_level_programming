@@ -1,4 +1,4 @@
-a#include "main.h"
+#include "main.h"
 
 /**
  * puts2 - prints outputs of a string
