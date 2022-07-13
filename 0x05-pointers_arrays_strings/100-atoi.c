@@ -32,5 +32,5 @@ int _atoi(char *s)
     }
   if (FLAG == 0)
     return (0);
-  retrun (n);
+  return (n);
 }
