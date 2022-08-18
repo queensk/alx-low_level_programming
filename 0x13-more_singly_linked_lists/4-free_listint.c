@@ -8,7 +8,7 @@
  * free memory of the node
  * Return: void
  */
-void free_listint(lisint_t *head)
+void free_listint(listint_t *head)
 {
         listint_t *check, *c;
         c = head;
