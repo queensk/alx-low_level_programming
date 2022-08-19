@@ -6,7 +6,7 @@
  * Description: there is one or more chars in the string b that is not 0 or 1
  * Return: return convarted numbers.
  */
-unsigned int binery_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
         unsigned int converted_number = 0, position = 1;
         int i = 0;
