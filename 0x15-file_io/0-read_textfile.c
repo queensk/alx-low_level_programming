@@ -1,9 +1,10 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * read_textfile - read text and print it to POSIX
  * @filename: name of file char
  * @letters:number of letters to read size_t
+ *
  * Return: read the file display it or error 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
