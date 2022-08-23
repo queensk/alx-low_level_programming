@@ -1,10 +1,15 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  *  create_file - create a file and write in it
  * @filename:file to be created
  * @text_content: content of the file created
- * Return: 1 or -1;
+ * 
+ * Description:  on failure (file can not be created, file can not be written, write “fails"
+ * file must have those permissions: rw-------,
+ * If the file already exists, do not change the permissions,
+ * if the file already exists, truncate it
+ * Return: 1 on success or if filename is NULL return -1
  */
 int create_file(const char *filename, char *text_content)
 {
