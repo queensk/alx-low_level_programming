@@ -10,38 +10,39 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *newpair, *tmp;
-    unsigned long int idx;
+	unsigned long int idx;
 
-    if (ht == NULL|| key == NULL || value == NULL)
+	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
-    idx = key_index((const unsigned char *)key, ht->size);
-    tmp = ht->array[idx];
+	idx = key_index((const unsigned char *)key, ht->size);
+	tmp = ht->array[idx];
 
-    if (tmp != NULL)
-    {
-        while (tmp)
-        {
-            if(strcmp(tmp->key, key))
-            {
-                tmp->value = strdup(value);
-                return (1);
-            }
-            tmp = tmp->next;
-        }
-    }
-    newpair = malloc(sizeof(hash_node_t));
-    if (newpair == NULL)
-        return (0);
+	if (tmp != NULL)
+	{
+		while (tmp)
+		{
+			if (strcmp(tmp->key, key) == 0)
+			{
+				tmp->value = strdup(value);
+				return (1);
+			}
+			tmp = tmp->next;
+		}
+	}
 
-    newpair->key = strdup(key);
-    newpair->value = strdup(value);
-    newpair->next = NULL;
+	newpair = malloc(sizeof(hash_node_t));
+	if (newpair == NULL)
+		return (0);
 
-    if (ht->array[idx] != NULL)
-        newpair->next = ht->array[idx];
+	newpair->key = strdup(key);
+	newpair->value = strdup(value);
+	newpair->next = NULL;
 
-    ht->array[idx] = newpair;
+	if (ht->array[idx] != NULL)
+		newpair->next = ht->array[idx];
 
-    return (1);
+	ht->array[idx] = newpair;
+
+	return (1);
 }
